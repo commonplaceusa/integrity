@@ -27,17 +27,17 @@ gem "bcat",                  "0.5.2"
 gem "rack",                  "1.1.0"
 
 # If you want to use Thin:
-# gem "thin"
+gem "thin"
 
 # If you want to use Unicorn:
 # gem "unicorn"
 
 # These are dependencies for the various notifiers. Uncomment as appropriate.
 # = Email
-# gem "pony", "1.1"
+gem "pony", "1.1"
 
 # = SES Email
-# gem 'aws-ses', '0.4.3', :require => 'aws/ses'
+gem 'aws-ses', '0.4.3', :require => 'aws/ses'
 
 # = Campfire
 # gem "broach", "0.2.1"

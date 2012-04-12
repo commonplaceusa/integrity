@@ -10,7 +10,7 @@ require "integrity"
 
 # Uncomment as appropriate for the notifier you want to use
 # = Email
-# require "integrity/notifier/email"
+require "integrity/notifier/email"
 # = SES Email
 # require "integrity/notifier/ses"
 # = Campfire
@@ -39,9 +39,9 @@ Integrity.configure do |c|
   c.directory                   = "builds"
   # Heroku
   # c.directory                 = File.dirname(__FILE__) + '/tmp/builds'
-  c.base_url                    = "http://ci.example.org"
+  c.base_url                    = "http://infrastructure.commonplaceusa.com"
   c.log                         = "integrity.log"
-  c.github_token                = "SECRET"
+  c.github_token                = "cpusa"
   c.build_all                   = true
   c.trim_branches               = false
   c.builder                     = :threaded, 5
